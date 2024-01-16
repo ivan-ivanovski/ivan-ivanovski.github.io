@@ -9,19 +9,33 @@
 </head>
 <body>
     <header>
-        <div class="brand" id="nameBrand"></div>
+        <div class="name" id="nameBrand">
+            <a href="#" class="nav-link">Ivan Ivanovski</a>
+        </div>
         <div class="nav-body">
-            <menu>
-
-                <li class="nav-item"><a href="#" class="nav-link"></a></li>
-            </menu>
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Who Am I</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
+            </ul>
         </div>
     </header>
     <main>
+        <h1>Welcome to my personal portfolio page</h1>
+        <button id="btnGoToProjectSection">Click to see my projects</button>
 
     </main>
     <footer>
 
     </footer>
+    <script>
+        "use strict";
+        let btnGoToProjects = document.getElementById("btnGoToProjectSection");
+        btnGoToProjects.addEventListener("click",(e)=>{
+            e.preventDefault();
+            alert('You clicked this button')
+        })
+    </script>
 </body>
 </html>
