@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --font-primary: "Archivo",sans-serif;
+    --font-secondary:"Anton", sans-serif;
+
+    --fontSizeXXL: 5rem;
+    --fontSizeXL: 4rem;
+    --fontSizeL: 3rem;
+    --fontSizeM: 2.5rem;
+    --fontSizeS: 1.5rem;
+    --fontSizeXS: 1rem;
+
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+#navigation{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    width: 100%;
+}
+#navigation #nameBrand a{
+    font-family: var(--font-primary);
+    color: #F3F8FF;
+    text-decoration: none;
+    font-size: var(--fontSizeS);
+}
+#navigation .nav-body{
+    display: block;
+}
+.nav-body #btnToggleNavigation{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    cursor: pointer;
+}
+#btnToggleNavigation .row{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 120ms ease-in-out all;
+    cursor: pointer;
+}
+#btnToggleNavigation .row .box{
+    padding: .3rem;
+    background: #F3F8FF;
+    transition: 400ms ease-in-out all;
+    cursor: pointer;
+}
+
+#navigation .nav-body ul{
+    display: flex;
+    flex-flow: wrap row;
+
+}
+main{
+
+}
