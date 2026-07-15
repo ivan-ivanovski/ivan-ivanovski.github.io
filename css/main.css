@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #faf7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -4%;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: #010101;
+}
+.container {
+    width: 720px;
+    max-width: 100%;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+.nav {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav ul {
+    list-style: none;
+    text-decoration-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+section {
+    display: block;
+    width: fit-content;
+    min-width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+.section-hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.short-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-works {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.section-self {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.ul-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.section-works .ul-list li::before,
+.section-self .ul-list li::before {
+    content: "- ";
+}
+
+.section-resources {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
